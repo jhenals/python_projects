@@ -1,8 +1,5 @@
 import pygame
 import sys
-from tkinter import *
-from tkinter import messagebox
-from PIL import ImageTk, Image
 
 pygame.init()
 
@@ -46,8 +43,8 @@ class Jhena:
         self.jhena_img_rect = self.jhena_img.get_rect()
         self.jhena_img_rect.width -= 10
         self.jhena_img_rect.height -= 10
-        self.jhena_img_rect.top= WINDOW_HEIGHT/2
-        self.jhena_img_rect.right= WINDOW_WIDTH
+        self.jhena_img_rect.top = WINDOW_HEIGHT/2
+        self.jhena_img_rect.right = WINDOW_WIDTH
         self.up = True
         self.down = False
 
@@ -228,7 +225,7 @@ def game_loop():
 
             level_font = font.render('Level:'+str(LEVEL), True, GREEN)
             level_font_rect = level_font.get_rect()
-            level_font_rect.center =  (500, cactus_img_rect.bottom + score_font_rect.height/2)
+            level_font_rect.center = (500, cactus_img_rect.bottom + score_font_rect.height/2)
             canvas.blit(level_font, level_font_rect)
 
             canvas.blit(cactus_img, cactus_img_rect)
