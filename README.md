@@ -1,4 +1,4 @@
-# python_games
+# python_projects
 This repo contains collection of my customized Python codes.
 
 1. She_vs_Jhe
